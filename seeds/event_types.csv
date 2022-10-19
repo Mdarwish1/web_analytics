@@ -1,0 +1,10 @@
+id,Name
+1,App install
+2,App open
+3,Login
+4,Request ride
+5,Accepted ride
+6,not available ride
+7,cancel ride
+8,rate driver
+9,exit app

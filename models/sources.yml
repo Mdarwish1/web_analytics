@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+
+  - name: web_analytics
+    tables: 
+      - name: events
+        columns: 
+          - name: id
+            description: unique identifier of the event
+          - name: event_type_id
+            description: foreign key to the events types table
+          - name: session_id
+            description: identifier for the user current session
+          - name: user_id
+            description: foreign key to the users table
+          - name: created_at
+            description: datetime when the event is created
+
+      - name: event_types
+        columns: 
+          - name: id
+            description: identifier of the event type
+          - name: name
+      
+      - name: countries
+        columns: 
+          - name: iso_code
+          - name: name
+
+      - name: users
+        columns:
+          - name: id
+            description: identifier of the user on the website
+          - name: full_name
+          - name: created_at
+            description: datetime where the user creates its account on the website
+          - name: phone_number
+          - name: country
+          - name: email
+          - name: city
+          
